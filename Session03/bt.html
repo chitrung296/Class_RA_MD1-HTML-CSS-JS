@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        label{
+        /* display: inline-block; */
+        /* label là thẻ inline
+        đã là inline thì không set width-height
+        */
+        display: inline-block;
+        width: 150px;
+        background-color:
+    }
+        </style> -->
+        <style>
+            .a{
+                display: inline-block;
+                width: 100px;
+            }
+            .h2{
+                color: blue;
+                background-color: blueviolet;
+                width: 500px;
+            }
+        </style>
+        
+        
+</head>
+<body>
+    <fieldset>
+        <legend>Thông tin sản phẩm:</legend>
+        <label for="tensanpham">Tên Sản phẩm</label>
+        <input id="tensanpham" type="text">
+        <label for="soluong">Số lượng:</label>
+        <input type="number" id="soluong">
+    </fieldset>
+    <fieldset>
+        <legend>Thông tin giao hàng:</legend>
+        <label for="hoten">Họ và Tên</label>
+        <input type="text" id="hoten">
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <label for="sdt">SĐT:</label>
+        <input type="tel" id="sdt">
+        <label for="diachi">Địa chỉ:</label>
+        <input type="text" id="diachi">
+    </fieldset>
+    <fieldset>
+        <legend>Thông tin thanh toán:</legend>
+        <label for="">Phương thức thanh toán</label>
+        <select name="" id="">
+            <option value="">Thanh toán khi nhận hàng</option>
+            <option value="">Thanh toán thẻ</option>
+            <option value="">Thanh toán momo</option>
+        </select>
+    </fieldset>
+    <button>Đặt hàng</button>
+    <h2 class="h2">Đăng ký học viên</h2>
+    <form action="">
+        <label class="a" for="fullname">Họ và Tên:</label>
+        <input type="text" id="fullname" name="fullname" required><br>
+      
+        <label class="a" for="dob">Ngày Sinh:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label class="a" for="gender">Giới Tính:</label>
+        Nam<input type="radio"name=:gender>
+        Nữ<input type="radio"name=:gender> <br>
+
+        <label class="a" for="course">Lớp:</label>
+        <select id="course" name="course" required>
+          <option value="">Chọn lớp</option>
+          <option value="programming">Lập trình</option>
+          <option value="design">Thiết kế</option>
+          <option value="marketing">Marketing</option>
+        </select><br>
+
+        <label class="a" for="email1">Email:</label>
+        <input type="email" id="email1" name="email" required><br>
+      
+        <label class="a" for="phone">Số Điện Thoại:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label class="a" for="message">Tin nhắn:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+      
+        <input type="submit" value="Đăng Ký"> <!--hoặc-->
+        <button>Nhập lại</button>
+
+      </form>
+<h2>Car Purchase Form</h2>
+      <form action="">
+        <label class="a" for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label class="a" for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label class="a" for="tel">Phone:</label>
+        <input type="tel" id="tel" name="tel"><br>
+
+        <label class="a" for="chooseacar">Choose a Car</label>
+        <select id="chooseacar" name="car">
+            <option>Please Select</option>
+            <option value="">Model1</option>
+            <option value="">Model2</option>
+            <option value="">Model3</option>
+        </select><br>
+
+        <label class="a" for="chooseacolor">Choose a Color</label>
+        <select name="color" id="chosseacolor">
+            <optgroup label="Colors">
+                <option value="red">Red</option>
+                <option value="red">Blue</option>
+                <option value="red">Pink</option>
+            </optgroup>
+        </select><br>
+        <label class="a" for="quantity">Quantity:</label>
+        <input type="text"><br>
+        <label class="a" for="delivery-date">Delivery Date</label>
+        <input type="date" id="delivery-date" name="delivery-date"><br>
+     <button>Submit</button>
+    </form>
+</body>
+</html>

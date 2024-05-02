@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Tạo 1 form cho người dùng đăng ký
+    các thuộc tính hay dùng trong input
+    type="text" :mặc định
+    type="password": ẩn mật khẩu
+    type="email": bắt buộc khi nhập phải có @
+    type="date": tạo ra một ô nhập gồm ngày tháng năm
+    type="time": thời gian
+    type="color": hiển thị màu
+    type="checkbox": hiển thị ô chọn
+    type="radio": các ô input mà có giá trị ở thuộc tính name giống nhau thì chỉ chọn được 1 cái
+    button: nút bấm để gửi dữ liệu lên server 
+    action: địa chỉ nơi nhận dữ liệu
+    regex: validate dữ liệu 
+    placeholder: gợi ý nhập
+    required : yêu cầu bắt buộc phải nhập
+    disabled: che các element không tương tác được
+    autocomplete ="on": giá trị mặc định on nếu ="off" thì sẽ không hiển thị phần gợi ý nhập
+    id: dùng để định danh cho thẻ (element)- giống như cccd
+-->
+    <form action="" autocomplete="off">
+        <label for="username">User Name:</label>
+        <input id="username" placeholder="Nhập họ và tên" type="text"> <br> <!-- break-->
+        <label for="email">Email:</label>
+        <input id="email" required type="email"><br>
+        <label for="">DOB:</label>
+        <input type="date"><br>
+        <label for="">Password:</label>
+        <input type="password"><br>
+        <label for="">ConfirmPassWord:</label>
+        <input type="password"><br>
+        <label for="">Time:</label>
+        <input type="time"><br>
+        <label for="">Color:</label>
+        <input type="color"><br>
+        A<input type="checkbox">
+        B<input type="checkbox"><br>
+        <label for="">Gender:</label> <br>
+        Nam<input type="radio" name="gender">
+        Nữ<input type="radio" name="gender">
+        Khác<input type="radio" name="gender"><br>
+        <select name="" id="">
+            <option value="">HCM</option>
+            <option value="">HN</option>
+            <option value="">Đà lạt</option>
+        </select>
+        <label for="">Disabled</label>
+        <input  type="text" disabled>
+        <textarea name="" id="" cols="15" rows="10"></textarea>
+        <button>Register</button>
+    </form>
+    
+</body>
+</html>
