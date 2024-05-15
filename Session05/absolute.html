@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- font awesome cdn -->
+    <style>
+        .box-1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* margin-top: 100px; */
+        }
+    
+        .box-2 {
+            width: 500px;
+            height: 300px;
+            background-color: green;
+            position: relative;
+        }
+        .box-2 .box-3{
+            width: 50px;
+            height: 50px;
+            background-color: violet;
+        }
+        .box-2 .box-4{
+            width: 80px;
+            height: 80px;
+            background-color: yellow;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        /* favicon */
+   
+    .login{
+        /* background-color: red; */
+        width: 200px;
+        position: relative;
+        /* background-color: yellow; */
+    }
+    .login .test{
+        position: absolute;
+        right: 30px;
+    }
+    </style>
+</head>
+<body>
+    <!-- 
+        Absolute: nó sẽ ăn theo vị trí của thằng cha chứa nó gần nhất có thuộc tính
+        là position (khác static). thì sẽ lấy vị trí cha làm gốc
+        nếu không có thằng cha nào chứa nó thì sẽ ăn theo kích thước màn hình
+     -->
+    
+    <i class="fa-solid fa-eye-slash"></i>
+    <div class="box-1">
+        box 1
+    </div>
+    <div class="box-2">
+        box2
+        <div class="box-3">
+            box3
+        </div>
+        <div class="box-4">
+            box4
+        </div>
+    </div>
+    <div class="login">
+        <input type="password" placeholder="********">
+        <i class="fa-solid fa-eye test"></i>
+    </div>
+</body>
+</html>

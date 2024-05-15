@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+}
+.container{
+    display: flex;
+}
+
+
+.bottom_left{
+    display: flex;
+
+   
+}
+.col-3{
+   width: 300px;
+    justify-self: start;
+}
+.content3{
+    align-self: center;
+}
+.card{
+   margin: auto;
+}
+.card-text{
+    align-content: center;
+}
+.footer{
+    background-color: rgb(192, 255, 234);
+}
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 1px;
+    min-height: 50px;
+}
+.nav{
+    display: flex;
+    
+}
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    margin: auto 30px;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+li{
+    list-style: none;
+}
