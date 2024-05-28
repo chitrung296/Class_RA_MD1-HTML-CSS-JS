@@ -16,6 +16,9 @@
 // - snake_case : student_name
 // - kebab-case : student-name
 // - PascalCase : StudentName 
+// đặt tên có ý nghĩa 
+// không được trùng từ khóa đặc biệt (let, var, const ,class,try, catch,..)
+// không được đặt từ khóa đầu tiên là số, ký tự đặc biệt (trừ$,_)
 
 // II. Kiểu dữ liệu cơ bản
 // 1. Number ==> 1,2,3,4,... ==> Khai báo ra các số
